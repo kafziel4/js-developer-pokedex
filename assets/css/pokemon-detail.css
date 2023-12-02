@@ -1,0 +1,157 @@
+.detail-content {
+  width: 100vw;
+  height: 100vh;
+  padding: 0 0 1rem;
+  background-color: #fff;
+  overflow: auto;
+}
+
+.detail-header {
+  margin: 0;
+  padding: 1rem;
+}
+
+.detail-header .back-link {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0 1rem;
+}
+
+.detail-header .title {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 1rem .5rem 1rem;
+}
+
+.detail-header .title .name {
+  color: #fff;
+  font-size: 2.125rem;
+  text-transform: capitalize;
+}
+
+.detail-header .title .number {
+  color: #fff;
+  padding: 1rem 0 0 0;
+}
+
+.detail-header .types {
+  display: flex;
+  list-style: none;
+  margin: 0 1rem .5rem;
+  padding: 0;
+}
+
+.detail-header .types .type {
+  color: #fff;
+  border-radius: 1rem;
+  font-size: .825rem;
+  margin: 0 .5rem 0 0;
+  padding: .25rem .5rem;
+  text-align: center;
+  filter: brightness(1.1);
+}
+
+.detail-header .picture {
+  display: flex;
+  justify-content: center;
+}
+
+.detail-header .picture img {
+  max-height: 350px;
+  max-width: 100%;
+}
+
+.detail-body {
+  font-size: .9rem;
+  margin: 0 2rem 0 1rem;
+}
+
+.detail-body table {
+  margin: 1rem 0 0 1rem;
+}
+
+.detail-body th, td {
+  padding: 1rem 2rem 0 0;
+  text-align: left;
+}
+
+.detail-body .abilities {
+  text-transform: capitalize;
+}
+
+.detail-body .stat-name {
+  text-transform: capitalize;
+}
+
+.detail-body .stat-value {
+  padding: 1rem .5rem 0 0;
+  text-align: right;
+}
+
+.detail-body .stat-container {
+  padding: 1rem 0 0;
+  width: 100%;
+}
+
+.detail-body .stat-bar {
+  border-radius: .25rem;
+  height: .9rem;
+  max-width: 100%;
+}
+
+.detail-body .stat-background {
+  background-color: #eee;
+  width: 100%;
+}
+
+.hp {
+  background-color: #ff5959;
+}
+
+.attack {
+  background-color: #f5aC78;
+}
+
+.defense {
+background-color: #fae078;
+}
+
+.special-attack {
+background-color: #9db7f5;
+}
+
+.special-defense {
+background-color: #a7db8d;
+}
+
+.speed {
+background-color: #fa92b2;
+}
+
+@media screen and (min-width: 992px) {
+  .detail-content {
+    max-width: 992px;
+    height: auto;
+    margin: 1rem auto;
+    border-radius: 1rem;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .detail-body {
+    margin: 0 5rem .5rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .detail-body {
+    margin: 0 10rem .5rem;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .stat-name {
+    white-space: nowrap;
+  }
+}
